@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  border-bottom: 5px solid orange;
+}
+
+.header {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+
+.logo {
+  color: bisque;
+  margin: 0 2rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.search-container {
+  width: 350px;
+}
+
+.search-container input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.30s ease-in-out;
+  border: 1px solid #DDDDDD;
+}
+
+input:focus {
+  box-shadow: 0 0 5px orange;
+  border: 1px solid orange;
+}
+
+.search-container {
+  color: black;
+  cursor: pointer;
+  right: 4%;
+  transition: 1s;
+}
+
+.search-container i:hover {
+  color: orange;
+}
+
+#window {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.img {
+  width: 380px;
+  height: 214px;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width:1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+  main {
+    width: 95%;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .header {
+    margin: 10px 0;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .header .name {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width:479px) {
+  .header {
+    margin: 30px 0;
+  }
+
+  .header .name {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .search-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .search-container .input {
+    font-size: .7rem;
+  }
+}
