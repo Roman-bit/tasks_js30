@@ -24,14 +24,14 @@ let tictactoe = new Array(3);
 tictactoe[0] = new Array(3);
 tictactoe[1] = new Array(3);
 tictactoe[2] = new Array(3);
-var player = 1;
-var gameWon = 0;
+let player = 1;
+let gameWon = 0;
 
 
 
 
 function addText1() {
-   if (checkMove(0, 0) == true) {
+  if (checkMove(0, 0) == true) {
     if (player == 1) {
       squareOneText.textContent = 'X';
       tictactoe[0][0] = 'X';
@@ -245,9 +245,9 @@ function checkWin(playerNum) {
     return true;
   }
 
-  var tieGame = true;
-  for (var i = 0; i < 3; i++) {
-    for (var x = 0; x < 3; x++) {
+  let tieGame = true;
+  for (let i = 0; i < 3; i++) {
+    for (let x = 0; x < 3; x++) {
       if (tictactoe[i][x] == null && tictactoe[i][x] == undefined) {
         tieGame = false;
       }
@@ -262,7 +262,6 @@ function checkWin(playerNum) {
 }
 
 function checkMove(row, column) {
-  console.log(tictactoe[row][column]);
   if (tictactoe[row][column] !== undefined && tictactoe[row][column] !== null) {
     return false;
   } else {
@@ -276,16 +275,14 @@ let myWindow = document.getElementById('myWindow')
 function endgame(num) {
   if (num == 0) {
     text.textContent = 'Tie game!';
-    myWindow.style.display = "block";
   }
   if (num == 1) {
     text.textContent = 'Player 1 Wins!';
-    myWindow.style.display = "block";
   }
   if (num == 2) {
     text.textContent = 'Player 2 Wins!';
-    myWindow.style.display = "block";
   }
+  myWindow.style.display = "block";
 }
 
 const restart = document.getElementById('restart')
@@ -313,8 +310,6 @@ function again() {
 };
 
 restart.addEventListener('click', again);
-
-
 
 function fPlay() {
   audio.play();
