@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
 
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="name">Tic Tac Toe</h1>
+    </header>
+    <main class="main">
+      <audio id="audio">
+        <source src="./click.mp3" type="audio/mp3"></audio>
+
+      <div class="content">
+        <table class="table-square">
+          <tr>
+            <td id="square_one_text" class="text"></td>
+            <td id="square_two_text" class="text"></td>
+            <td id="square_three_text" class="text"></td>
+          </tr>
+          <tr>
+            <td id="square_four_text" class="text"></td>
+            <td id="square_five_text" class="text"></td>
+            <td id="square_six_text" class="text"></td>
+          </tr>
+          <tr>
+            <td id="square_seven_text" class="text"></td>
+            <td id="square_eight_text" class="text"></td>
+            <td id="square_nine_text" class="text"></td>
+          </tr>
+        </table>
+        <div class="board">
+          <table>
+            <tr>
+              <td id="square_one"></td>
+              <td id="square_two"></td>
+              <td id="square_three"></td>
+            </tr>
+            <tr>
+              <td id="square_four"></td>
+              <td id="square_five"></td>
+              <td id="square_six"></td>
+            </tr>
+            <tr>
+              <td id="square_seven"></td>
+              <td id="square_eight"></td>
+              <td id="square_nine"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="myWindow" class="myGame">
+        <div class="window">
+          <div class="window-header">
+            <h2>Game Over</h2>
+          </div>
+          <div class="window-body">
+            <p class="window_text"></p>
+            <button id="restart">Play again?</button>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <footer class="footer">
+      <div class="date">
+        <p class="date-name">&copy;&nbsp;&nbsp;&nbsp; 2022</p>
+      </div>
+      <div class="link">
+        <a class="my-link" href="https://github.com/Roman-bit">Github</a>
+      </div>
+      <div class="school">
+        <a class="school-link" href="https://rs.school/">Rolling Scopes School</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+
 </html>
